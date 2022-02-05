@@ -32,7 +32,7 @@ public class Poupanca extends Conta{
 
 		// Se o valor disponível for menor que o valor solicitado para saque
 		}else {
-			System.out.printf("Saque não realizado. Limite indisponível %n");
+			System.out.printf("Saque não realizado. Limite indisponível %n%n");
 		}			
 	}
 	
@@ -96,8 +96,4 @@ public class Poupanca extends Conta{
 	public void setRendimento(double rendimento) {
 		this.rendimento = rendimento;
 	}
-
-	
-	
-
 }

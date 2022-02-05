@@ -18,9 +18,9 @@ public class ContaCorrente extends Conta{
 		System.out.println("|---------------------- Banco Java - Conta Corrente - Saque ------------------|");		
 		System.out.println("Titular da conta: "+this.getTitular());
 		System.out.printf("Solicitação de saque no valor de R$%.2f %n",valor);
-		
+	
+		// Se o valor solicitado no saque for suficiente o saque é efetuado.
 		if(valor <= this.getSaldo()) {
-			//this.saldo -= valor;
 			this.setSaldo(this.getSaldo()-valor);
 			System.out.printf("Saque realizado com sucesso%nSeu saldo atual é de: R$%.2f %n%n", this.getSaldo());
 		}else {			
@@ -33,7 +33,8 @@ public class ContaCorrente extends Conta{
 		System.out.println("|--------------------- Banco Java - Conta Corrente - Depósito ----------------|");
 		System.out.println("Titular da conta: "+this.getTitular());
 		System.out.printf("Efetuado depósito no valor de R$%.2f %n",valor);
-		this.saldo += valor; 
+		//Valor depositado é adicionado ao saldo da conta
+		this.setSaldo(this.getSaldo()+valor);
 		System.out.printf("Depósito realizado com sucesso.%nSeu saldo atual é de: R$%.2f %n%n", this.getSaldo());
 	}
 	

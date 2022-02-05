@@ -20,13 +20,13 @@ public class BancoPrincipal {
 		
 		//Conta Especial
 		c2.dados();
-		c2.sacar(350);
+		c2.sacar(3150);
 		c2.depositar(1000);
 		
 		//Conta Poupança
 		c3.dados();
 		c3.depositar(1000);
-		c3.sacar(5000);		
+		c3.sacar(1200);		
 		c3.projecao();
 		
 	}
